@@ -4,7 +4,7 @@
 
 ----
 
-![devfolio](https://user-images.githubusercontent.com/12079219/88624612-edcca280-d0c4-11ea-91db-b17e1569676b.gif)
+![jawed](https://user-images.githubusercontent.com/12079219/88625754-0473f900-d0c7-11ea-94b6-aed7882ba93d.gif)
 
 ## Sections
 
