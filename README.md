@@ -4,8 +4,7 @@
 
 ----
 
-![devfolio](https://user-images.githubusercontent.com/12079219/88623437-96c5ce00-d0c2-11ea-9d1c-ff61643e5775.gif)
-
+![devfolio](https://user-images.githubusercontent.com/12079219/88624612-edcca280-d0c4-11ea-91db-b17e1569676b.gif)
 
 ## Sections
 
