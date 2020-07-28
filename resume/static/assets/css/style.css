@@ -531,12 +531,17 @@ section {
   height: 160px;
   border: 7px solid #0563bb;
   border-radius: 50%;
+  background-position: top center;
+  border-bottom-right-radius: 1px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .address li{
  list-style-type: none;
  text-align: right;
- padding-bottom: 5px;
+ padding-bottom: 10px;
 
 }
 

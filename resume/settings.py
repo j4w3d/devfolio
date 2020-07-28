@@ -118,8 +118,8 @@ DEVFOLIO_SETTINGS = {
         # Top 3 proficient tech of your interest
         "techs" : [
             {
-                "name" : "Configuration/Deployment/Automation", # Insert tech area or skill you have experience in
-                "progress" : 90                                 # Insert your progress status in percentage
+                "name" : "Operations", # Insert tech area or skill you have experience in
+                "progress" : 85                                 # Insert your progress status in percentage
             },
             {
                 "name" : "Programming",
