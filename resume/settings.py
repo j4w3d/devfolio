@@ -118,7 +118,7 @@ DEVFOLIO_SETTINGS = {
         # Top 3 proficient tech of your interest
         "techs" : [
             {
-                "name" : "Operations", # Insert tech area or skill you have experience in
+                "name" : "Major DevOps Tools", # Insert tech area or skill you have experience in
                 "progress" : 85                                 # Insert your progress status in percentage
             },
             {
@@ -155,8 +155,6 @@ DEVFOLIO_SETTINGS = {
                 "date" : "Feb 2016 - Nov 2017",
                 "company" : "APYL Software & Systems Ltd., Noida (India)",
                 "tasks" : [
-                    "Create or use REST APIs in python3 to automate & monitor web server & database server resources.",
-
                     "Utilized various open source technologies and used various tools to orchestrate solutions.",
 
                     "Used Ansible as configuration management tool to create roles & playbooks to setup shared mail server with spam & virus filtering.",
@@ -248,7 +246,7 @@ DEVFOLIO_SETTINGS = {
 
     # Social Media links
     "SOCIAL" : {
-        "title" : "Want to get connected or just say Hello? Follow me on the social channels below.",
+        "title" : "Want to get connected or just say Hello? Leave a message on the social channels below.",
         "sites" : [
             {
                 "name" : "linkedin",
