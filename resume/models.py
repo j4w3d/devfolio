@@ -6,7 +6,7 @@ class Email(models.Model):
     sender_email = models.EmailField()
     subject = models.CharField(max_length=127)
     message = models.TextField(max_length=255)
-    origin = models.URLField()
+    remote_ip = models.URLField()
     arrived_at = models.DateTimeField(auto_now=True)
 
     class  Meta:

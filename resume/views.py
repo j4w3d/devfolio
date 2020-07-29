@@ -18,7 +18,6 @@ def home(request):
 
 @csrf_protect
 def send_mail(request):
-
     if request.method != "POST":
         return Response("Method Not Allowed!", status=405)
 
@@ -32,7 +31,11 @@ def send_mail(request):
     subject = request.POST.get('subject')
     message = request.POST.get('message')
     sender_name = request.POST.get('name')
-    origin = request.headers.get('Origin')
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        remote_ip = x_forwarded_for.split(',')[0]
+    else:
+        remote_ip = request.META.get('REMOTE_ADDR')
 
     # Delete Email older than 100
     email_count = Email.objects.count()
@@ -45,7 +48,7 @@ def send_mail(request):
         sender_email = sender_email,
         subject = subject,
         message = message,
-        origin = origin,
+        remote_ip = remote_ip,
         )
 
         email_data.save()
