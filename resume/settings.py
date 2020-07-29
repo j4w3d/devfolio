@@ -197,7 +197,7 @@ DEVFOLIO_SETTINGS = {
                 "rating": 4
             },
             {
-                "name": "aocker",
+                "name": "Docker",
                 "rating": 4
             },
             {
