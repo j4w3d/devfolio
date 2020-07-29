@@ -20,4 +20,5 @@ from resume import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="resume_home"),
+    path('mail/send/', views.send_mail, name="resume_mail"),
 ]

@@ -1,20 +1,16 @@
-/**
-* PHP Email Form Validation - v2.0
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
+
 !(function($) {
   "use strict";
 
-  $('form.php-email-form').submit(function(e) {
+  $('form.email-form').submit(function(e) {
     e.preventDefault();
-    
+
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
     f.children('input').each(function() { // run all inputs
-     
+
       var i = $(this); // current input
       var rule = i.attr('data-rule');
 
@@ -104,7 +100,7 @@
       this_form.find('.error-message').slideDown().html('The form action property is not set!');
       return false;
     }
-    
+
     this_form.find('.sent-message').slideUp();
     this_form.find('.error-message').slideUp();
     this_form.find('.loading').slideDown();
@@ -112,18 +108,18 @@
     if ( $(this).data('recaptcha-site-key') ) {
       var recaptcha_site_key = $(this).data('recaptcha-site-key');
       grecaptcha.ready(function() {
-        grecaptcha.execute(recaptcha_site_key, {action: 'php_email_form_submit'}).then(function(token) {
-          php_email_form_submit(this_form,action,this_form.serialize() + '&recaptcha-response=' + token);
+        grecaptcha.execute(recaptcha_site_key, {action: 'email_form_submit'}).then(function(token) {
+          email_form_submit(this_form,action,this_form.serialize() + '&recaptcha-response=' + token);
         });
       });
     } else {
-      php_email_form_submit(this_form,action,this_form.serialize());
+      email_form_submit(this_form,action,this_form.serialize());
     }
-    
+
     return true;
   });
 
-  function php_email_form_submit(this_form, action, data) {
+  function email_form_submit(this_form, action, data) {
     $.ajax({
       type: "POST",
       url: action,
@@ -149,13 +145,7 @@
         if(data.statusText) {
           error_msg += ' ' + data.statusText;
         }
-        if(data.status) {
-          error_msg += ' ' + data.status;
-        }
         error_msg += '<br>';
-      }
-      if(data.responseText) {
-        error_msg += data.responseText;
       }
       this_form.find('.loading').slideUp();
       this_form.find('.error-message').slideDown().html(error_msg);
