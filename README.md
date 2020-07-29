@@ -1,8 +1,7 @@
 # Developer Portfolio 🚀
 
-### A beautiful portfolio web app wirtten in ***Python3*** using ***Django3.0*** web framework for developers :neckbeard:
+## A beautiful portfolio web app wirtten in ***Python3*** using ***Django3.0*** web framework for developers :neckbeard:
 
-----
 
 ![jawed](https://user-images.githubusercontent.com/12079219/88625754-0473f900-d0c7-11ea-94b6-aed7882ba93d.gif)
 
