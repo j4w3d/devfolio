@@ -28,7 +28,7 @@ python3.7 or above
 django3.0 or above
 ```
 
-**Install `git` and clone this repo
+**Install `git` and clone this repo**
 
 ```
 # Clone this repository
